@@ -107,32 +107,13 @@ else
 
     foreach (string path in paths)
     {
-        Task.Run(() => Watching(path));
-    }
-
-    switch (mode)
-    {
-        case "realtime":
-            
-            break;
-
-        case "cycle":
-
-            break;
-
-        case "daily":
-
-            break;
-
-        default:
-            Console.WriteLine("Back up mode has not been set. Back up process will not start.");
-            break;
+        Task.Run(() => Watching(path, mode));
     }
 
     Console.ReadLine();
 }
 
-async void Watching(string path)
+async void Watching(string path, string mode)
 {
     var watcher = new FileSystemWatcher(path);
 
