@@ -1,0 +1,46 @@
+﻿# Backup Mode
+# 1. mode=realtime
+#		Realtime mode will send the file right after changes has been made.
+#		Example: mode=realtime
+#
+# 2. mode=cycle:time
+#		Cycle mode will send the file when the time reach the setted timer
+#		Time setting is in minute
+#		Example: mode=cycle:30 *this will run every 30 minute
+#
+# 3. mode=daily:time
+#		Cycle mode will send the file everyday at the setted time
+#		Time setting is in 24 hour format.
+#		Example: mode=cycle:23:30 *this will run on 11 30 PM every day.
+#
+# Default mode is realtime
+
+mode=realtime
+
+# File Path
+# You can set multiple path to backup multiple path.
+#
+
+path=C:\xampp\htdocs
+path=C:\Users\User\Documents
+
+# Server Setting
+# You can also set multiple server for multiple duplication.
+# The best way for multiple duplication server copy is setting from the server itself (if you run your own backup server).
+# Run multiple duplication from the client setting will employs higher client server usage (bandwidth, cpu, ram etc.) and might slowed client server when the duplication is in process.
+#
+# Username and password can be generated from the server. Its better to created each client server with on username and password.
+# To enable default encryption, can put encrpytion=true after port number. By default, the encryption is not enable.
+# Default encryption is AES and please be noted that encrypted file will be stored in base64 which is will increase the file size to 30%~40%.
+# Encryption & encoding to base64 process will uses client server's cpu usage higher than usual.
+
+server=username:password@host:port
+server=username:password@host:port:encryption=true
+server=username:password@host:port:encryption=false
+
+# Encryption Key
+# I you are enabling AES Encryption, then you need to define you password with aes_key=your_password
+
+aes_key=you_password_here
+
+
