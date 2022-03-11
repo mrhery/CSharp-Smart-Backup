@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HSmartBackupServer", "HSmartBackupServer\HSmartBackupServer.csproj", "{8F6FAE53-AA80-4127-9FA7-1AB31CA4E38F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F6FAE53-AA80-4127-9FA7-1AB31CA4E38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F6FAE53-AA80-4127-9FA7-1AB31CA4E38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F6FAE53-AA80-4127-9FA7-1AB31CA4E38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F6FAE53-AA80-4127-9FA7-1AB31CA4E38F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C2DB3CC-3C4B-451E-9625-70DE03116F5B}
+	EndGlobalSection
+EndGlobal
